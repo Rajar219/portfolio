@@ -1844,6 +1844,8 @@ body.dark-mode .glass-card {
   cursor: pointer;
   color: #333;
 }
+
+
 /* Base overlay */
 .resume-modal-overlay {
   position: fixed;
@@ -1856,7 +1858,7 @@ body.dark-mode .glass-card {
   z-index: 999999;
 }
 
-/* Light mode modal */
+/* Modal box */
 .resume-modal-box {
   background: #ffffff;
   color: #111;
@@ -1865,30 +1867,28 @@ body.dark-mode .glass-card {
   border-radius: 14px;
   text-align: center;
   position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
 
-/* Dark mode overlay */
-.resume-modal-overlay.dark {
-  background: rgba(0,0,0,0.65);
+/* DARK MODE (THIS IS THE KEY) */
+body.dark-mode .resume-modal-overlay {
+  background: rgba(0,0,0,0.7);
 }
 
-/* Dark mode modal */
-.resume-modal-overlay.dark .resume-modal-box {
+body.dark-mode .resume-modal-box {
   background: #121824;
-  color: #e5e7eb !important;
+  color: #e5e7eb;
   border: 1px solid #2a3040;
 }
 
-.resume-modal-overlay.dark .resume-close-btn {
-  color: #fff !important;
+body.dark-mode .resume-close-btn {
+  color: #ffffff;
 }
 
-.resume-modal-overlay.dark .resume-option-btn {
-  background: #1e40af !important;
-  color: white !important;
+body.dark-mode .resume-option-btn {
+  background: #1e40af;
 }
 
-.resume-modal-overlay.dark .resume-option-btn:hover {
-  background: #2563eb !important;
+body.dark-mode .resume-option-btn:hover {
+  background: #2563eb;
 }
+
