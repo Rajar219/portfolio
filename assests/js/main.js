@@ -462,40 +462,20 @@ window.addEventListener("scroll", () => {
 });
 
 
-// OPEN POPUP
-document.getElementById("downloadCvBtn").addEventListener("click", function () {
-  document.getElementById("cvModal").style.display = "flex";
-});
 
-// CLOSE POPUP
-function closeCvModal() {
-  document.getElementById("cvModal").style.display = "none";
-}
-
-// PREVIEW RESUME
-function openResume(filePath) {
-  window.open(filePath, "_blank"); 
-}
-
+// ======================
+// RESUME MODAL (CLEAN)
+// ======================
 
 function openResumeModal() {
-    const modal = document.getElementById("resumeModal"); // ✔ correct ID
-
-    // remove old status
-    modal.classList.remove("dark");
-
-    // apply dark mode
-    if (document.body.classList.contains("dark-mode")) {
-        modal.classList.add("dark");
-    }
-
-    modal.style.display = "flex";
+  document.getElementById("resumeModal").style.display = "flex";
 }
 
 function closeResumeModal() {
-    document.getElementById("resumeModal").style.display = "none";
+  document.getElementById("resumeModal").style.display = "none";
 }
 
 function openResume(path) {
-    window.open(path, "_blank");
+  window.open(path, "_blank");
 }
+
